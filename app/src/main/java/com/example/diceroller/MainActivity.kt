@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val rollButton: Button = findViewById(R.id.btn_roll)
+        diceImage = findViewById(R.id.iv_dice)
         rollButton.text = "Roll a dice!"
         rollButton.setOnClickListener { rollDice() }
     }
